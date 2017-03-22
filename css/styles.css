@@ -1,0 +1,23 @@
+.jumbotron h1 {
+  text-align: center;
+}
+
+.container {
+
+}
+
+.all-rows-cols {
+
+}
+
+.row {
+
+}
+
+.col-xs-2 {
+  height: 120px;
+}
+
+.col-xs-2 img {
+    height: 100px;
+}
