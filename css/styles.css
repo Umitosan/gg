@@ -1,19 +1,27 @@
+
+
+
 body {
   background-color: #A2AAB6;
+}
+
+.green-background {
+  background-color: lightgreen;
+}
+.yellow-background {
+  background-color: lightyellow;
+}
+.red-background {
+  background-color: pink;
 }
 
 .jumbotron h1 {
   text-align: center;
 }
 
-.button-bar1 {
+.button-bar {
   text-align: center;
-  margin-bottom: 10px;
-}
-
-.button-bar2 {
-  text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
 }
 
 .btn {
@@ -24,31 +32,17 @@ body {
   border-color: darkgreen;
 }
 
-/* buttons! */
-#allon {
-
-}
-#something {
-
-}
-#alloff {
-
-}
-#showboard {
-
-}
-#resetpage {
-
-}
-#addrow {
-  
+.button-bar2 h3 {
+  font-family: fantasy;
+  font-weight: bold;
 }
 
 .row {
   margin-bottom: 10px;
+  display: none;
 }
 
-.row1 img {
+.row img {
   height: 100px;
 }
 
@@ -56,25 +50,16 @@ body {
   height: 120px;
 }
 
-.row2 img {
-  height: 100px;
-}
 
 .row2 .col-xs-2 {
   height: 120px;
 }
 
-.row3 img {
-  height: 100px;
-}
 
 .row3 .col-xs-2 {
   height: 120px;
 }
 
-.row4 img {
-  height: 100px;
-}
 
 .row4 .col-xs-2 {
   height: 120px;
