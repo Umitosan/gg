@@ -1,8 +1,6 @@
 $(document).ready(function() {
 
 
-
-  // BUTTONS BUTTONS BUTTONS
   // BUTTONS BUTTONS BUTTONS
   $("#allon").click(function() {
     return 0;
@@ -23,6 +21,7 @@ $(document).ready(function() {
   $("#addrow").click(function() {
     return 0;
   });
+  // BUTTONS THEMES
   $("button#greenback").click(function() {
     $("body").removeClass();
     $("body").addClass("green-background");
@@ -38,7 +37,10 @@ $(document).ready(function() {
   $("button#resetback").click(function() {
     $("body").removeClass();
   });
-
+  // ROLLOVER
+  $(".col-xs-2").hover(function() {
+    $(this).find("img, p").toggle();
+  });
 
 
 });
