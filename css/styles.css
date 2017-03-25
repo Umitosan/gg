@@ -1,26 +1,47 @@
+body {
+  background-color: #A2AAB6;
+}
+
 .jumbotron h1 {
   text-align: center;
 }
 
-.button-bar {
+.button-bar1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.button-bar2 {
   text-align: center;
   margin-bottom: 30px;
 }
 
-.btn-primary {
-  height: 60px;
+.btn {
+  height:40px;
+  color: black;
+  font-size: 18px;
+  background-color: lightgrey;
+  border-color: darkgreen;
 }
 
-.btn-warning {
-  height: 60px;
-}
+/* buttons! */
+#allon {
 
-.btn-success {
-  height: 60px;
 }
+#something {
 
-.btn-info {
-  height: 60px;
+}
+#alloff {
+
+}
+#showboard {
+
+}
+#resetpage {
+
+}
+#addrow {
+  
 }
 
 .row {
