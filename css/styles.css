@@ -31,36 +31,19 @@ body {
   background-color: lightgrey;
   border-color: darkgreen;
 }
-
-.button-bar2 h3 {
+.button-bar h3 {
   font-family: fantasy;
   font-weight: bold;
 }
 
 .row {
+  height: 120px;
   margin-bottom: 10px;
-  display: none;
+  margin-left: 0;
+  margin-right: 0;
+  /*display: none;*/
 }
 
 .row img {
   height: 100px;
-}
-
-.row1 .col-xs-2 {
-  height: 120px;
-}
-
-
-.row2 .col-xs-2 {
-  height: 120px;
-}
-
-
-.row3 .col-xs-2 {
-  height: 120px;
-}
-
-
-.row4 .col-xs-2 {
-  height: 120px;
 }
