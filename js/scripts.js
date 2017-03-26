@@ -4,6 +4,7 @@ $(document).ready(function() {
 
   var rowtotal = 1;
 
+
   // BUTTONS BUTTONS BUTTONS
   $("#allon").click(function() {
     $(".col-xs-2").children().show();
@@ -20,8 +21,30 @@ $(document).ready(function() {
   $("#resetpage").click(function() {
     location.reload();
   });
+  // CHANGE THEME
+  $("button#greenback").click(function() {
+    $("body").removeClass();
+    $("body").addClass("green-background");
+  });
+  $("button#yellowback").click(function() {
+    $("body").removeClass();
+    $("body").addClass("yellow-background");
+  });
+  $("button#redback").click(function() {
+    $("body").removeClass();
+    $("body").addClass("red-background");
+  });
+  $("button#resetback").click(function() {
+    $("body").removeClass();
+  });
+  // ROLLOVER TILE DISAPEAR
+  $(".col-xs-2").hover(function() {
+    $(this).children("img, p").hide();
+  });
+
+  // ADD A ROW MADNESS!!!!
   $("#addrow").click(function() {
-    $(".row").last("div").append( "\
+    $(".row").last().append( "\
       <div class='row'>\
         <div class='col-xs-2'>\
           <p>box</p>\
@@ -50,36 +73,12 @@ $(document).ready(function() {
       </div>"
     );
     $(".row").last().children(".col-xs-2").hover(function() {
-      $(this).children("img").hide();
+      $(this).children("img, p").hide();
     });
     rowtotal += 1;
     console.log(rowtotal);
     // console.log( "row + toString(rowtotal)" + "row" + rowtotal.toString() );
     $(".row").last().addClass( "row" + rowtotal.toString() );
   });
-  // CHANGE THEME
-  $("button#greenback").click(function() {
-    $("body").removeClass();
-    $("body").addClass("green-background");
-  });
-  $("button#yellowback").click(function() {
-    $("body").removeClass();
-    $("body").addClass("yellow-background");
-  });
-  $("button#redback").click(function() {
-    $("body").removeClass();
-    $("body").addClass("red-background");
-  });
-  $("button#resetback").click(function() {
-    $("body").removeClass();
-  });
-  // ROLLOVER TILE DISAPEAR
-  $(".col-xs-2").hover(function() {
-    $(this).children("img").hide();
-  });
-  $("body").hover(function() {
-    $("body").find("img").show();
-  });
-
 
 });

@@ -37,13 +37,16 @@ body {
 }
 
 .row {
-  height: 120px;
-  margin-bottom: 10px;
   margin-left: 0;
   margin-right: 0;
-  /*display: none;*/
+  /*border-color: black;
+  border-width: 1px;
+  border-style: solid;*/
 }
 
 .row img {
-  height: 100px;
+  height: 80px;
+  /*border-color: black;
+  border-width: 1px;
+  border-style: solid;*/
 }
