@@ -1,6 +1,4 @@
 
-
-
 body {
   background-color: #A2AAB6;
 }
@@ -13,6 +11,14 @@ body {
 }
 .red-background {
   background-color: pink;
+}
+
+.glass {
+  opacity: 0;
+}
+
+.unGlass {
+  opacity: 0.9;
 }
 
 .jumbotron h1 {
@@ -39,14 +45,8 @@ body {
 .row {
   margin-left: 0;
   margin-right: 0;
-  /*border-color: black;
-  border-width: 1px;
-  border-style: solid;*/
 }
 
 .row img {
   height: 80px;
-  /*border-color: black;
-  border-width: 1px;
-  border-style: solid;*/
 }

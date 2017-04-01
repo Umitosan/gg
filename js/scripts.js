@@ -4,13 +4,24 @@ $(document).ready(function() {
 
   var rowtotal = 1;
 
+  // HIDE STUFF
+  var glassMe = function(obj) {
+    $(obj).children().removeClass("unGlass");
+    $(obj).children().addClass("glass");
+  };
+
+  // UNHIDE STUFF
+  var unGlassMe = function(obj) {
+    $(obj).children().removeClass("glass");
+    $(obj).children().addClass("unGlass");
+  };
 
   // BUTTONS BUTTONS BUTTONS
   $("#allon").click(function() {
-    $(".col-xs-2").children().show();
+    glassMe(".col-xs-2");
   });
   $("#alloff").click(function() {
-    $(".col-xs-2").children().hide();
+    unGlassMe(".col-xs-2");
   });
   $("#fadetoggle").click(function() {
     $(".col-xs-2").children().fadeToggle();
@@ -21,6 +32,7 @@ $(document).ready(function() {
   $("#resetpage").click(function() {
     location.reload();
   });
+
   // CHANGE THEME
   $("button#greenback").click(function() {
     $("body").removeClass();
@@ -37,9 +49,10 @@ $(document).ready(function() {
   $("button#resetback").click(function() {
     $("body").removeClass();
   });
+
   // ROLLOVER TILE DISAPEAR
   $(".col-xs-2").hover(function() {
-    $(this).children("img, p").hide();
+    glassMe(this);
   });
 
   // ADD A ROW MADNESS!!!!
@@ -73,12 +86,11 @@ $(document).ready(function() {
       </div>"
     );
     $(".row").last().children(".col-xs-2").hover(function() {
-      $(this).children("img, p").hide();
+      glassMe(this);
     });
     rowtotal += 1;
     console.log(rowtotal);
-    // console.log( "row + toString(rowtotal)" + "row" + rowtotal.toString() );
-    $(".row").last().addClass( "row" + rowtotal.toString() );
+      $(".row").last().addClass( "row" + rowtotal.toString() );
   });
 
 });
